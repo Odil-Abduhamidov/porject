@@ -149,7 +149,7 @@ button:enabled:active {
 
 .indicator {
   position: fixed;
-  top: 70px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
   width: 388px;
@@ -238,7 +238,7 @@ button:enabled:active {
 .emoji-variants .variant-wrapper input[type=radio] {
   display: none;
 }
-.emoji-variants .variant-wrapper label {
+.emoji-variants .variant-wrapper label:not(.input-wrapper) {
   cursor: pointer;
   display: block;
   padding: 12px;

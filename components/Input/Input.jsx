@@ -3,14 +3,14 @@ import React from 'react'
 export const Input = ({InputTxt,InputType , InputName,InputID, InputPlaceholder, InputPattern, SpanErrorMessage}) => {
   return (
     <label className="input-wrapper" htmlFor="username">
-              {InputTxt}
+              {label}
               <input
                 required
-                type={InputType}
-                name={InputName}
-                id={InputID}
-                placeholder={InputPlaceholder}
-                pattern={InputPattern}
+                type={type}
+                name={name}
+                id={id}
+                placeholder={placeholder}
+                pattern={pattern}
               />
               <span id="error-message">{SpanErrorMessage}</span>
             </label>

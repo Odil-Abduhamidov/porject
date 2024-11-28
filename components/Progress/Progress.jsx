@@ -1,11 +1,13 @@
+import classNames, { className } from "classnames";
+
 export const Progress = ({ steps, activeStep }) => {
+  const progress = (100 / steps) * (activeStep - 1) + "%";
+
   return (
     <div className="indicator">
       <div className="indicator__text">
         <span className="indicator__description">Прогресс прохождения:</span>
-        <span className="indicator__value">
-          {(100 / steps) * (activeStep - 1)}%
-        </span>
+        <span className="indicator__value">{progress}</span>
       </div>
       <div className="indicator__progressbar">
         {Array(steps)
@@ -18,6 +20,12 @@ export const Progress = ({ steps, activeStep }) => {
               }
             />
           ))}
+        <div>
+          className=
+          {classNames({
+            [`indicator-unit-${index + 1}`]: true,
+          })}
+        </div>
       </div>
     </div>
   );

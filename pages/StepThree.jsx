@@ -45,20 +45,15 @@ export const StepThree = () => {
       <div className="question">
         <h2>3. Занимательный вопрос</h2>
         <ul className="emoji-variants">
-          {/* Динамическое создание списка с помощью map */}
           {variants.map((variant) => (
             <li
               className={`variant-wrapper ${
                 activeStep === variant.id ? "active" : ""
-              }`} // Условный класс для активного шага
+              }`}
               key={variant.id}
-              onClick={() => handleStepClick(variant.id)} // Обработчик клика по шагу
+              onClick={() => handleStepClick(variant.id)}
             >
-              <Input
-                InputType="radio"
-                InputName="variant"
-                InputID={variant.id}
-              />
+              <Input type="radio" name="variant" id={variant.id} />
               <label htmlFor={variant.id}>
                 <img src={variant.imgSrc} alt={variant.altText} />
                 <p>{variant.label}</p>
@@ -66,7 +61,7 @@ export const StepThree = () => {
             </li>
           ))}
         </ul>
-        <Button BtnType="button" disabled BtnId="next-btn" text="Далее" />
+        <Button type="button" disabled id="next-btn" text="Далее" />
       </div>
     </div>
   );

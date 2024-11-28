@@ -1,6 +1,6 @@
-export const Button = ({ text, BtnType, BtnId }) => {
+export const Button = ({ text, type, id }) => {
   return (
-    <button type={BtnType} id={BtnId}>
+    <button type={type} id={id}>
       {text}
     </button>
   );

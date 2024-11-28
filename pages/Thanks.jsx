@@ -5,10 +5,10 @@ export const Thanks = () => {
     <div className="container">
       <div className="wrapper">
         <div className="thanks">
-          <img src="./img/bell.png" alt="bell" />
+          <img src="/img/bell.png" alt="bell" />
           <h1>Спасибо за прохождение опроса!</h1>
           <p>Получи свою скидку по ссылке ниже или другое блаблабла</p>
-          <Button text="Получить ссылку" BtnType="button" BtnId="get-link" />
+          <Button text="Получить ссылку" type="button" id="get-link" />
         </div>
       </div>
     </div>
